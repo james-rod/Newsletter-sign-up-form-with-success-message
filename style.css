@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(234, 29%, 20%);
+}
+
+.outer-container{
+    display: block;
+}
+
+.outer-container.hidden{
+    display: none;
+}
+
+.newsletter-signup-state{
+    background-color: #fff;
+    display: flex;
+    border-radius: 30px;
+}
+
+.sign-up-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-One{
+    text-align: center;
+    font-size: 50px;
+    margin: 10px;
+}
+
+.text-one{
+    line-height: 1.6;
+    
+    width: 300px;
+}
+
+.check-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-image: url("assets/images/icon-list.svg");
+    padding: 20px;
+    width: 300px;
+}
+
+.input-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+label{
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#errorMessage{
+    position: absolute;
+    left: 195px;
+    font-size: 12px;
+    font-weight: bold;
+    color: red;
+}
+
+.hideErrorMessage{
+    display: none;
+}
+
+input[type=email]{
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.email{
+    border: 2px solid grey;
+}
+
+.errorEmail{
+    border-color: rgb(227, 75, 113);
+    background-color: rgba(255, 1, 1, 0.1);
+    color:  rgb(227, 75, 113);
+}
+
+.submit-btn{
+    background-color: hsl(234, 29%, 20%);
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    font-weight: bold; 
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover{
+    cursor: pointer;
+    transition: all 0.3s;
+    background-image: linear-gradient(to right, #ff0066 8%, #ff6600 100%);
+}
+
+.img-container{
+    padding: 20px;
+}
+
+.mobile-img{
+    display: none;
+}
+
+.outer-success-container{
+    display: none;
+}
+
+.outer-success-container.show{
+    display: block;
+}
+
+.success-message-state{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+    height: 500px;
+    padding: 20px;
+}
+
+.check-img{
+    width: 64px;
+    margin-left: 20px;
+}
+
+.title-Two{
+    margin: 20px;
+    font-size: 50px;
+    width: 250px;
+}
+
+.text-two{
+    margin: 15px  20px;
+    width: 360px;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.Dismiss-btn{
+    background-color: hsl(234, 29%, 20%);
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    font-weight: bold; 
+    padding: 20px;
+    border-radius: 10px;
+    width: 360px;
+    transition: all 0.3s ease;
+}
+
+.Dismiss-btn:hover{
+    cursor: pointer;
+    transition: all 0.3s;
+    background-image: linear-gradient(to right, #ff0066 8%, #ff6600 100%);
+}
+
+@media screen and (max-width: 600px) {
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #fff;
+    }
+
+    .outer-container.hidden{
+        display: none;
+    }
+
+    .newsletter-signup-state{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-container{
+        background-size: cover; 
+        margin-bottom: 20px;
+        padding: 0;
+        width: 450px;
+    }
+
+    .desktop-img{
+        display: none;
+    }
+
+    .mobile-img{
+        display: block;
+        background-image: url("assets/images/illustration-sign-up-mobile.svg");
+        background-size: cover; 
+        width: 100%;
+        height: 100%;
+    }
+
+    .sign-up-container{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+    }
+
+    .title-One{
+        font-family: 'Roboto', sans-serif;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+
+    .text-one{
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        margin-bottom: 10px;
+        line-height: 1.6;
+    }
+
+    .check-container{
+        display: flex;
+        flex-direction: column;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        list-style: url("./assets/images/icon-list.svg");
+        padding: 20px;
+        width: 300px;
+    }
+
+    .input-container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    label{
+        font-size: 12px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    
+
+    input[type=email]{
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    .submit-btn{
+        padding: 20px;
+        border-radius: 5px;
+        background-color: hsl(234, 29%, 20%);
+        color: #fff;
+        border: none;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .success-message-state{
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+    }
+
+    .check-img{
+        width: 64px;
+        margin: 20px;
+    }
+
+    .title-Two{
+        width: 340px;
+        margin: 20px ;
+        font-size: 40px;
+        line-height: 1;
+    }
+
+    .text-two{
+        margin: 10px 20px;
+        width: 325px;
+    }
+
+    .btn-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .Dismiss-btn{
+        margin-top: 70%;
+        padding: 15px;
+        border-radius: 5px;
+        background-color: hsl(234, 29%, 20%);
+        color: #fff;
+        border: none;
+        width: 300px;
+    }
+}
